@@ -8,7 +8,7 @@ def main():
     """
     main function
     """
-    inp_var = raw_input("")
+    inp_var = input()
     vowels_str = ""
     consonents_str = ""
     for char in inp_var:
