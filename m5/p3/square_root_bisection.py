@@ -8,8 +8,8 @@ def main():
     low_c = 0
     high_c = inp_a
     guess_i = (high_c + low_c)/2.0
-    while abs(guess_i**3 - inp_a) >= check_i:
-        if guess_i**3 < inp_a:
+    while abs(guess_i**2 - inp_a) >= check_i:
+        if guess_i**2 < inp_a:
             low_c = guess_i
         else:
             high_c = guess_i
