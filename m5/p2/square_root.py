@@ -3,14 +3,14 @@ using approximation method
 """
 
 def main():
-    """ Cube root program approximation method"""
+    """ square root program approximation method"""
     inp_a = int(input())
     guess_a = 0
     check_a = 0.01
     # check is just a tollerance value to check
-    while abs(guess_a**3 - inp_a) >= check_a and guess_a <= inp_a:
+    while abs(guess_a**2 - inp_a) >= check_a and guess_a <= inp_a:
         guess_a += 0.0001
-    if abs(guess_a**3 - inp_a) >= check_a:
+    if abs(guess_a**2 - inp_a) >= check_a:
         print(str(guess_a))
     else:
         print(str(guess_a))
