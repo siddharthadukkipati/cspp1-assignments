@@ -14,6 +14,7 @@ def main():
     guess_i = inp_var/2.0
     while abs(guess_i**2 - inp_var) >= check_i:
         guess_i = guess_i - ((guess_i**2) - inp_var)/(2*guess_i)
-    print('Square root of ' + str(inp_var) + ' is about ' + str(guess_i))
+    # print('Square root of ' + str(inp_var) + ' is about ' + str(guess_i))
+    print(guess_i)
 if __name__ == "__main__":
     main()
