@@ -11,8 +11,8 @@ def main():
     while abs(guess_a**3 - inp_a) >= check_a and guess_a <= inp_a:
         guess_a += 0.0001
     if abs(guess_a**3 - inp_a) >= check_a:
-        print("success")
+        print(str(guess_a))
     else:
-        print("failed")
+        print(str(guess_a))
 if __name__ == "__main__":
     main()
