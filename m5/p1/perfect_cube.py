@@ -19,6 +19,6 @@ def main():
     if guess_i**3 == inp_a:
         print(str(inp_a))
     else:
-        print()
+        print("not a cube")
 if __name__ == "__main__":
     main()
