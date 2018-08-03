@@ -14,6 +14,6 @@ def main():
         else:
             high_c = guess_i
         guess_i = (high_c + low_c)/2.0
-    print(guess_i, 'is close to the cube root of', inp_a)
+    print(guess_i)
 if __name__ == "__main__":
     main()
