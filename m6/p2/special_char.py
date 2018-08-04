@@ -6,11 +6,12 @@ Output has three spaces, which are to be replaced with these special characters
 def main():
     """
     Read string from the input, store it in variable str_input.
+    , (, ), -, _, +, =, ., /, ;, ', ', [, ], ,,
     """
     inp_a = input("")
     inp_b = ""
     for _ in inp_a:
-        if _ in "!, @, #, $, %, ^, &, *":
+        if _ in "!, @, #, $, %, ^, &, *, ,,":
             inp_b += " "
         else:
             inp_b += _
