@@ -7,7 +7,7 @@ def main():
     """
     Read string from the input, store it in variable str_input.
     """
-    inp_a = input("Enter a text: ")
+    inp_a = input("")
     inp_b = " "
     for _ in inp_a:
         if _ in "!, @, #, $, %, ^, &, *":
