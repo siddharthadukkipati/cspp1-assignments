@@ -11,7 +11,7 @@ def main():
     inp_a = input("")
     inp_b = ""
     for _ in inp_a:
-        if _ in "!, @, #, $, %, ^, &, *, ,,":
+        if _ in "!@#$%^&*," and ",":
             inp_b += " "
         else:
             inp_b += _
