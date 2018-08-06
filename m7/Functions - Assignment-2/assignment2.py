@@ -14,7 +14,7 @@ def paying_debt_off_in_a_year(inp_balance, annual_interest_rate):
      x Monthly unpaid balance)"""
     monthly_payment = 0
     balance = inp_balance
-    while balance < 0:
+    while balance > 0:
         balance = inp_balance
         monthly_payment = monthly_payment + 10
         month = 1
