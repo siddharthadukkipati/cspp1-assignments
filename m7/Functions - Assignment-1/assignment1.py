@@ -22,13 +22,14 @@ def paying_debt_off_in_a_year(balance, annual_interest_rate, monthly_payment_rat
     Updated balance each month = \
     (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)"""
     month = 1
-    while month = 12:
+    while month <= 12:
         monthly_interest_rate = (annual_interest_rate) / 12.0
         minimum_monthly_payment = (monthly_payment_rate) * (balance)
         monthly_unpaid_balance = (balance) - (minimum_monthly_payment)
         updated_balance_each_month = (monthly_unpaid_balance) + \
         (monthly_interest_rate * monthly_unpaid_balance)
         balance = updated_balance_each_month
+        print("Remaining balance :" + str(balance) )
         month += 1
     return round(balance, 2)
 
