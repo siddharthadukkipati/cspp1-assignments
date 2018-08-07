@@ -4,7 +4,6 @@ Write a Python function, sumofdigits, that takes in one number and returns the
 sum of digits of given number.
 This function takes in one number and returns one number.
 """
-
 def sumofdigits(n):
     """
     n is positive Integer
@@ -18,8 +17,7 @@ def sumofdigits(n):
 def main():
     """
     calling function
-    """
-    
+    """ 
     a = input()
     print(sumofdigits(int(a)))  
 
