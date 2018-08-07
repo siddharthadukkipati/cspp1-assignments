@@ -17,9 +17,9 @@ def sum_of_digits(inp_n):
 def main():
     """
     calling function
-    """ 
+    """
     inp_a = input()
-    print(sum_of_digits(int(inp_a)))  
+    print(sum_of_digits(int(inp_a)))
 
 if __name__ == "__main__":
     main()
