@@ -22,9 +22,7 @@ def is_word_guessed(secret_word, letters_guessed):
         return True
     return False
 def main():
-    '''
-    Main function for the program
-    '''
+    
     user_input = input()
     if user_input:
         data = user_input.split()
