@@ -44,7 +44,7 @@ def create_social_network(data):
             a_dict[l[0]].append(l[1].split(","))
     # for i in a_dict:
     #     a_dict[i] = set(a_dict[i])
-    print(a_dict)
+    return(a_dict)
 
 def main():
     '''
