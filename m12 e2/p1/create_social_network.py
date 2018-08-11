@@ -31,9 +31,9 @@ def create_social_network(data):
         Return a empty dictionary if the string format of the data is invalid
         Empty dictionary is not None, it is a dictionary with no keys
     '''
-    print("Range")
+    # print("Range")
     inp_a = int(input())
-    print("Enter the dict values")
+    # print("Enter the dict values")
     a_dict = {}
     for i in range(inp_a):
         data = input()
@@ -42,14 +42,21 @@ def create_social_network(data):
             a_dict[l[0]] = l[1].split(",")
         else:
             a_dict[l[0]].append(l[1].split(","))
-    for i in a_dict:
-        a_dict[i] = set(a_dict[i])
+    # for i in a_dict:
+    #     a_dict[i] = set(a_dict[i])
     print(a_dict)
+
 def main():
     '''
         handling testcase input and printing output
     '''
     string = ''
+    # lines = int(input())
+    # for i in range(lines):
+    #     i += 1
+    #     string += input()
+    #     string += '\n'
+
     print(create_social_network(string))
 
 if __name__ == "__main__":
