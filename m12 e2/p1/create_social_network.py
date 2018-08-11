@@ -50,12 +50,6 @@ def main():
         handling testcase input and printing output
     '''
     string = ''
-    lines = int(input())
-    for i in range(lines):
-        i += 1
-        string += input()
-        string += '\n'
-
     print(create_social_network(string))
 
 if __name__ == "__main__":
