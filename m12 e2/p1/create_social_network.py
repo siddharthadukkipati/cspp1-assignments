@@ -35,13 +35,13 @@ def create_social_network(data):
     inp_a = int(input())
     # print("Enter the dict values")
     a_dict = {}
-    for i in range(inp_a):
+    for _ in range(inp_a):
         data = input('')
-        l = data.split(' follows ')
-        if l[0] not in a_dict:
-            a_dict[l[0]] = l[1].split(',')
+        list_dic = data.split(' follows ')
+        if list_dic[0] not in a_dict:
+            a_dict[list_dic[0]] = list_dic[1].split(',')
         else:
-            a_dict[l[0]].append(l[1].split(','))
+            a_dict[list_dic[0]].append(list_dic[1].split(','))
     # for i in a_dict:
     #     a_dict[i] = set(a_dict[i])
     return a_dict
