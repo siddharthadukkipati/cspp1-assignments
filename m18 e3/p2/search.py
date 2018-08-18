@@ -56,7 +56,6 @@ def main():
 
     # read the number of search queries
     lines = int(input())
-    
     # read the search queries into a list
     queries = []
     for i in range(lines):
@@ -68,3 +67,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
