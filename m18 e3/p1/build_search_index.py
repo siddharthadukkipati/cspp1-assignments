@@ -22,6 +22,7 @@
 '''
 
 # helper function to load the stop words from a file
+FILE_NAME = 'stopwords.txt'
 def load_stopwords(filename):
     '''
         loads stop words from a file and returns a dictionary
@@ -39,19 +40,33 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    pass
+    spe_list = ''
+    for i in range(text):
+    	spe_list += text.split(',') 
+    print(spe_list)
+    list_of_words = ""
+    for word_s in text:
+    	if word_s not in "!@#$%^&*()_-+=';.,?":
+    		list_of_words += word_s
+    # print(list_of_words)
+    list_of_words = list_of_words.lower().split(' ')
+    # print(list_of_words)
+    return list_of_words
+
 
 def build_search_index(docs):
     '''
         Process the docs step by step as given below
     '''
-
+    clean_inp = word_list(docs)
+    spe_list = ''
     # initialize a search index (an empty dictionary)
-
+    search_index = {}
     # iterate through all the docs
     # keep track of doc_id which is the list index corresponding the document
     # hint: use enumerate to obtain the list index in the for loop
-
+    for i in range(docs):
+    	spe_list += docs.split(',') 
         # clean up doc and tokenize to words list
 
         # add or update the words of the doc to the search index
@@ -82,6 +97,9 @@ def main():
     for i in range(lines):
         documents.append(input())
         i += 1
+    # print(documents)
+    # print(word_list(documents))
+    print(build_search_index(documents))
 
     # call print to display the search index
     print_search_index(build_search_index(documents))
