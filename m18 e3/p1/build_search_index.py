@@ -40,10 +40,6 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    spe_list = ''
-    for i in range(text):
-    	spe_list += text.split(',') 
-    print(spe_list)
     list_of_words = ""
     for word_s in text:
     	if word_s not in "!@#$%^&*()_-+=';.,?":
