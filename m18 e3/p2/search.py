@@ -38,7 +38,7 @@ def search(search_index, query):
         make a set of doc_id and return
     '''
     available_values = []
-    query = query.lower().split('')
+    query = query.lower().split(' ')
     for word in query:
         if word in enumerate(search_index[word]):
             for word in search_index[word]:
