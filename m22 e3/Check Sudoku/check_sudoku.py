@@ -55,7 +55,7 @@ def main():
     '''
         main function to read input sudoku from console
         call check_sudoku function and print the result to console
-    '''    
+    '''
     # initialize empty list
     sudoku = []
 
