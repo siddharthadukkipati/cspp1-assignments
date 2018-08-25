@@ -12,7 +12,7 @@ def print_dictionary(dictionary):
 
 def main():
     """reading the dict"""
-    dictionary = input()
+    dictionary = eval(input())
     print_dictionary(dictionary)
 
 if __name__ == '__main__':
