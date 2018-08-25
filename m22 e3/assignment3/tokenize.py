@@ -2,7 +2,7 @@
 Write a function to tokenize a given string and return a dictionary with the frequency of
 each word
 '''
-def tokenize(string, lines):
+def tokenize(string):
     """function to count the freq of the word"""
     words = string.split()
     dictionary = {}
@@ -11,14 +11,14 @@ def tokenize(string, lines):
             dictionary[word] += 1
         else:
             dictionary[word] = 1
-    return dictionary        
+    return dictionary
 def main():
     """to read the input"""
     lines = int(input())
     inp_string = input()
     text = ''.join(inp_string)
     text.split()
-    print(tokenize(text, lines))
+    print(tokenize(text))
 
 if __name__ == '__main__':
     main()
