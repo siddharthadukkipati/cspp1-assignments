@@ -6,7 +6,7 @@ def clean_string(string):
     input_str = string.lower()
     list_1 = ""
     for i in input_str:
-        if i not in '!@#$%^&*()_+-=,.?1234567890':
+        if i not in '!@#$%^&*()_+-=,.?123456789':
             if i not in "'":
                 list_1 += i
     list_1 = list_1.split()
