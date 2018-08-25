@@ -9,12 +9,12 @@ def frequency_graph(dictionary):
     """
     keys = sorted(dictionary.keys())
     for key in keys:
-    	print(key, "-", dictionary[key]*('#'))
+        print(key, '-', dictionary[key]*('#'))
 
 def main():
-	"""
-	reading dictionary
-	"""
+    """
+    reading dictionary
+    """
     dictionary = eval(input())
     frequency_graph(dictionary)
 
