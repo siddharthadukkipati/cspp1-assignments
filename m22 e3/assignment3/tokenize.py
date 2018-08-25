@@ -14,7 +14,7 @@ def tokenize(string):
     return dictionary
 def main():
     """to read the input"""
-    # lines = int(input())
+    lines = int(input())
     inp_string = input()
     text = ''.join(inp_string)
     text.split()
