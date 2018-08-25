@@ -28,7 +28,7 @@ def check_sudoku(sudoku):
     if "".join(sorted(list_12[0][0]+list_12[0][1]+list_12[0][2]+ list_12[1][0]+ list_12[1][1]+list_12[1][2]+list_12[2][0]+list_12[2][1]+list_12[2][2])) != "123456789":
         return False
     if "".join(sorted(list_12[0][3]+list_12[0][4]+list_12[0][5]+ list_12[1][3]+ list_12[1][4]+list_12[1][5]+list_12[2][3]+list_12[2][4]+list_12[2][5])) != "123456789":
-        return False 
+        return False
     if "".join(sorted(list_12[0][6]+list_12[0][7]+list_12[0][8]+ list_12[1][6]+ list_12[1][7]+list_12[1][8]+list_12[2][6]+list_12[2][7]+list_12[2][8])) != "123456789":
         return False
     if "".join(sorted(list_12[3][0]+list_12[3][1]+list_12[3][2]+ list_12[4][0]+ list_12[4][1]+list_12[4][2]+list_12[5][0]+list_12[5][1]+list_12[5][2])) != "123456789":
@@ -55,8 +55,7 @@ def main():
     '''
         main function to read input sudoku from console
         call check_sudoku function and print the result to console
-    '''
-    
+    '''    
     # initialize empty list
     sudoku = []
 
