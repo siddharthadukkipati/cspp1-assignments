@@ -15,19 +15,19 @@ break and cleared your head."""
 
 def main():
     """to print the longest alphabetical series"""
-    var_a = input()
-    max_c = 0
-    gain_c = 0
+    inp_str = input()
+    max_count = 0
+    gain_count = 0
     count_c = 0
-    for i in range(len(var_a)-1):
-        if var_a[i] <= var_a[i+1]:
+    for i in range(len(inp_str)-1):
+        if inp_str[i] <= inp_str[i+1]:
             count_c += 1
         else:
             count_c = 0
-        if gain_c < count_c:
-            gain_c = count_c
-            max_c = i
-    d_max = max_c - gain_c + 1
-    print(var_a[d_max:d_max+gain_c+1])
+        if gain_count < count_c:
+            gain_count = count_c
+            max_count = i
+    d_max = max_count - gain_count + 1
+    print(inp_str[d_max:d_max+gain_count+1])
 if __name__ == "__main__":
     main()

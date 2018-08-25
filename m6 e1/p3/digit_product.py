@@ -1,18 +1,18 @@
-""" # given input product the individual number example 123 output should be  6"""
-I_NT = int(input())
-I_C = 1
-C_O = 1
-N_UM = 1
-if I_NT < 0:
-    N_UM = -1
-    I_NT = abs(I_NT)
+""" # given input product_num the individual number example 123 output should be  6"""
+inp_1 = int(input())
+product_num = 1
+initial_number = 1
+num_ = 1
+if inp_1 < 0:
+    num_ = -1
+    inp_1 = abs(inp_1)
 else:
-    N_UM = 1
-if I_NT != 0:
-    while I_NT >= 1:
-        C_O = I_NT % 10
-        I_C = I_C * C_O
-        I_NT = I_NT // 10
-    print(N_UM*I_C)
+    num_ = 1
+if inp_1 != 0:
+    while inp_1 >= 1:
+        initial_number = inp_1 % 10
+        product_num = product_num * initial_number
+        inp_1 = inp_1 // 10
+    print(num_*product_num)
 else:
     print("0")

@@ -7,7 +7,7 @@ def main():
     inp_a = int(input())
     guess_a = 0
     check_a = 0.01
-    # check is just a tollerance value to check
+    # check_a is just a tollerance value to check
     while abs(guess_a**2 - inp_a) >= check_a and guess_a <= inp_a:
         guess_a += 0.1
     if abs(guess_a**2 - inp_a) >= check_a:
