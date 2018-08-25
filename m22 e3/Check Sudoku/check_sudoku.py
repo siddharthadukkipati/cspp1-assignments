@@ -34,7 +34,7 @@ def check_sudoku(sudoku):
     if "".join(sorted(list_12[3][0]+list_12[3][1]+list_12[3][2]+ list_12[4][0]+ list_12[4][1]+list_12[4][2]+list_12[5][0]+list_12[5][1]+list_12[5][2])) != "123456789":
         return False
     if "".join(sorted(list_12[3][3]+list_12[3][4]+list_12[3][5]+ list_12[4][3]+ list_12[4][4]+list_12[4][5]+list_12[5][3]+list_12[5][4]+list_12[5][5])) != "123456789":
-        return False 
+        return False
     if "".join(sorted(list_12[3][6]+list_12[3][7]+list_12[3][8]+ list_12[4][6]+ list_12[4][7]+list_12[4][8]+list_12[5][6]+list_12[5][7]+list_12[5][8])) != "123456789":
         return False
     if "".join(sorted(list_12[6][0]+list_12[6][1]+list_12[6][2]+ list_12[7][0]+ list_12[7][1]+list_12[7][2]+list_12[8][0]+list_12[8][1]+list_12[8][2])) != "123456789":
