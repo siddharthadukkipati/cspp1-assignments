@@ -13,7 +13,4 @@ def main():
         output_string += input() + '\n'
     print(output_string)
 if __name__ == '__main__':
-    """
-    main function
-    """
     main()
