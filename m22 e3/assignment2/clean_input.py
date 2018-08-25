@@ -14,7 +14,7 @@ def clean_string(string):
                 list_1 += i
     list_1 = list_1.split()
     return("".join(str(x) for x in list_1))
-    
+
 def main():
     """
     taking the input
