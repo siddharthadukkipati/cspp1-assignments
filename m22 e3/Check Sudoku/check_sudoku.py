@@ -49,7 +49,7 @@ def check_sudoku(sudoku):
     list_12 = []
     for _ in range(num_n):
         list_12.append(input().split())
-    print(check(list_12))
+    print(check_sudoku(list_12))
 
 def main():
     '''
