@@ -46,8 +46,8 @@ def is_flush(hand):
 def four_of_a_kind(hand):
     '''four of a kind'''
     four_list = []
-    for h in hand:
-        four_list.append(CARD_VALUES[h[0]])
+    for hand_h in hand:
+        four_list.append(CARD_VALUES[hand_h[0]])
     four_list.sort()
     for i in range(0, len(four_list)-3):
         if four_list[i] == four_list[i+1] == four_list[i+2] == four_list[i+3]:
@@ -57,8 +57,8 @@ def four_of_a_kind(hand):
 def three_of_a_kind(hand):
     '''three of kind'''
     three_list = []
-    for h in hand:
-        three_list.append(CARD_VALUES[h[0]])
+    for hand_h in hand:
+        three_list.append(CARD_VALUES[hand_h[0]])
     three_list.sort()
     for i in range(0, len(three_list)-2):
         if three_list[i] == three_list[i+1] == three_list[i+2]:
@@ -68,8 +68,8 @@ def three_of_a_kind(hand):
 def two_pair(hand):
     '''two pairs'''
     two_list = []
-    for h in hand:
-        two_list.append(CARD_VALUES[h[0]])
+    for hand_h in hand:
+        two_list.append(CARD_VALUES[hand_h[0]])
     two_list.sort()
     for i in range(0, len(two_list)-3):
         if two_list[i] == two_list[i+1] and two_list[i+2] == two_list[i+3]:
@@ -79,8 +79,8 @@ def two_pair(hand):
 def one_pair(hand):
     '''one pair'''
     one_list = []
-    for h in hand:
-        one_list.append(CARD_VALUES[h[0]])
+    for hand_h in hand:
+        one_list.append(CARD_VALUES[hand_h[0]])
     one_list.sort()
     for i in range(0,len(one_list)-1):
         if(one_list[i]) == (one_list[i+1]):
@@ -89,8 +89,8 @@ def one_pair(hand):
 def full_house(hand):
     '''full house'''
     full_list = []
-    for h in hand:
-        full_list.append(CARD_VALUES[h[0]])
+    for hand_h in hand:
+        full_list.append(CARD_VALUES[hand_h[0]])
     full_list.sort()
     for i in range(0, len(full_list)-1):
         if full_list[i] == full_list[i+1] == full_list[i+2] and full_list[i+3] == full_list[i+4]:
@@ -110,7 +110,7 @@ def hand_rank(hand):
     # If you haven't then go the main or poker function and print the hands
     # Each card is coded as a 2 character string. Example Kind of Hearts is KH
     # First character for face value 2,3,4,5,6,7,8,9,T,J,Q,K,A
-    # Second character for the suit S (Spade), H (Heart), D (Diamond), C (Clubs)
+    # Second character for the suit S (Spade), hand_h (Heart), D (Diamond), C (Clubs)
     # What would be the logic to determine if a hand is a straight or flush?
     # Let's not think about the logic in the hand_rank function
     # Instead break it down into two sub functions is_straight and is_flush
