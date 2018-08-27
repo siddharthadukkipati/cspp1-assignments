@@ -42,7 +42,6 @@ def is_flush(hand):
         if temp[1] != i[1]:
             return False
     return True
-    
 def four_of_a_kind(hand):
     '''four of a kind'''
     four_list = []
@@ -82,7 +81,7 @@ def one_pair(hand):
     for hand_h in hand:
         one_list.append(CARD_VALUES[hand_h[0]])
     one_list.sort()
-    for i in range(0,len(one_list)-1):
+    for i in range(0, len(one_list)-1):
         if(one_list[i]) == (one_list[i+1]):
             return True
     return False
