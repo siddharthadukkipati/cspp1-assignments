@@ -31,9 +31,7 @@ def similarity(dict_1, dict_2):
             a_dict[word] = (inp_1.count(word), inp_2.count(word))
     # print(a_dict)
     numerator, add_1, add_2 = 0, 0, 0
-    """
-    for checking the values and calucating the value3
-    """
+    
     for key_check in a_dict:
         numerator += a_dict[key_check][0]*a_dict[key_check][1]
         add_1 += a_dict[key_check][0] ** 2
