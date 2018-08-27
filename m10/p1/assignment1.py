@@ -1,20 +1,16 @@
-'''
-Exercise : Assignment-1
-implement the function get_available_letters that takes in one parameter -
-a list of letters, letters_guessed. This function returns a string
-that is comprised of lowercase English letters - all lowercase English letters
-that are not in letters_guessed
-'''
-
+'''def'''
 def get_available_letters(letters_guessed):
     '''
     :param letters_guessed: list, what letters have been guessed so far
     returns: string, comprised of letters that represents what letters have not
-      yet been guessed.
+    yet been guessed.
     '''
-    pass
-
-
+    import string
+    alphabets = string.ascii_lowercase
+    for char in letters_guessed:
+        if char in letters_guessed:
+            alphabets = alphabets.replace(char, "")
+    return alphabets
 
 def main():
     '''
@@ -30,3 +26,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
