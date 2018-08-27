@@ -1,21 +1,12 @@
-""""#Assume s is a string of lower case characters.
-#Write a program that counts up the number of vowels contained in the string s.
- Valid vowels are: 'a', 'e', 'i', 'o', and 'u'. For example,
- if s = 'azcbobobegghakl', your program should print:
-#Number of vowels: 5
-"""
+"""Assume s is a string of lower case characters.
+Number of vowels: 5"""
 def main():
-    """
-    main function
-    """
-    inp_var = input()
-    vowels_str = ""
-    consonents_str = ""
-    for char in inp_var:
+    """Enter string"""
+    s_v = input()
+    count_v = 0
+    for char in s_v:
         if char in 'AEIOUaeiou':
-            vowels_str += char
-        else:
-            consonents_str += char
-    print(len(vowels_str))
+            count_v = count_v + 1
+    print(str(count_v))
 if __name__ == "__main__":
     main()

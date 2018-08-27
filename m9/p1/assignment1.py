@@ -14,15 +14,18 @@ def is_word_guessed(secret_word, letters_guessed):
     returns: boolean, True if all the letters of secret_word are in letters_guessed;
       False otherwise
     '''
-    count_o = 0
-    for char in secret_word:
-        if char in letters_guessed:
-            count_o += 1
-    if count_o == len(secret_word):
+    # FILL IN YOUR CODE HERE...
+    for _ in secret_word:
+        for each_char in letters_guessed:
+            secret_word = secret_word.replace(each_char, "")
+    if secret_word == "":
         return True
     return False
+
 def main():
-    
+    '''
+    Main function for the program
+    '''
     user_input = input()
     if user_input:
         data = user_input.split()
